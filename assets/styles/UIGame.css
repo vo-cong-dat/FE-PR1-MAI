@@ -51,21 +51,18 @@ body {
   position: relative;
   padding: 5px 10px;
   transition: all 0.3s ease;
- 
 }
 
 .nav ul a:hover {
-  color: rgba(255, 255, 255, );
+  color: rgba(255, 255, 255);
 }
 
 .nav ul a.active {
   border-bottom: 5px solid white;
   padding-bottom: 35px;
-
 }
 
 .nav ul a.active::after {
-
   position: absolute;
   bottom: -35px;
   left: 0;
@@ -99,7 +96,7 @@ body {
   object-fit: cover;
 }
 
-input[type="radio"] {
+input[type='radio'] {
   display: none;
 }
 
@@ -126,7 +123,7 @@ input[type="radio"] {
   box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-input[type="radio"]:checked + .nav-btn {
+input[type='radio']:checked + .nav-btn {
   background-color: #f44336;
   box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.2);
 }
