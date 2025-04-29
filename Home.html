@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Hub</title>
+    <link rel="stylesheet" href="./asset/styles/Home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" />
+</head>
+
+<body>
+    <div class="header">
+        <div class="nav">
+            <div class="nav-child">
+                <div class="logo"><a href="#" class="nav-link"><img src="../asset/images/logo.png" alt="Company Logo"></a></div>
+                <ul>
+                    <li><a href="#" class="nav-link" data-page="home">HOME</a></li>
+                    <li><a href="#" class="nav-link" data-page="games">GAME</a></li>
+                    <li><a href="#" class="nav-link" data-page="news">NEWS</a></li>
+                    <li><a href="#" class="nav-link" data-page="math">MATH</a></li>
+                    <li><a href="#" class="nav-link" data-page="company">COMPANY</a></li>
+                    <li><a href="#" class="nav-link" data-page="events">EVENTS</a></li>
+                    <li><a href="#" class="nav-link" data-page="partners">PARTNERS</a></li>
+                </ul>
+            </div>
+        </div>
+    <div class="container">
+        <p>Home Page</p>
+        
+    </div>
+
+    <script>
+        function navigateToPage(page) {
+    const pages = {
+        'home': 'Home.html',
+        'games': 'UIGame.html',
+        'news': 'news.html',
+        'math': 'math.html',
+        'company': 'company.html',
+        'events': 'events.html',
+        'partners': 'partners.html'
+    };
+    if (pages[page]) {
+        localStorage.setItem('activePage', page);
+        window.location.href = pages[page];
+    } else {
+        console.error('Page not found:', page);
+    }
+}
+
+document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', (event) => {
+        event.preventDefault();
+        document.querySelectorAll('.nav-link').forEach(item => {
+            item.classList.remove('active');
+        });
+        link.classList.add('active');
+        const page = link.getAttribute('data-page') || 'home';
+        navigateToPage(page);
+    });
+});
+
+window.addEventListener('DOMContentLoaded', () => {
+    const activePage = localStorage.getItem('activePage') || 'home';
+    document.querySelectorAll('.nav-link').forEach(link => {
+        const page = link.getAttribute('data-page') || 'home';
+        if (page === activePage) {
+            link.classList.add('active');
+        }
+    });
+});
+    </script>
+</body>
+
+</html>
