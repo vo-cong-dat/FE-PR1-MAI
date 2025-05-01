@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gaming Hub</title>
+    <link rel="stylesheet" href="./assets/styles/UIGame.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="nav">
+        <div class="nav-child">
+          <div class="logo">
+            <a href="#" class="nav-link"
+              ><img src="./assets/images/logo.png" alt="Company Logo"
+            /></a>
+          </div>
+          <ul>
+            <li><a href="#" class="nav-link" data-page="home">HOME</a></li>
+            <li><a href="#" class="nav-link" data-page="games">GAMES</a></li>
+            <li><a href="#" class="nav-link" data-page="news">NEWS</a></li>
+            <li><a href="#" class="nav-link" data-page="math">MATH</a></li>
+            <li><a href="#" class="nav-link" data-page="company">COMPANY</a></li>
+            <li><a href="#" class="nav-link" data-page="events">EVENTS</a></li>
+            <li><a href="#" class="nav-link" data-page="partners">PARTNERS</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="slider">
+        <input type="radio" name="slider" id="slide1" checked />
+        <input type="radio" name="slider" id="slide2" />
+        <input type="radio" name="slider" id="slide3" />
+        <input type="radio" name="slider" id="slide4" />
+        <input type="radio" name="slider" id="slide5" />
+
+        <div class="slides">
+          <div class="slide">
+            <img src="./assets/images/bcgr.webp" alt="Slide 1" />
+          </div>
+          <div class="slide">
+            <img src="./assets/images/banner2.jpg" alt="Slide 2" />
+          </div>
+          <div class="slide">
+            <img src="./assets/images/banner3.jpg" alt="Slide 3" />
+          </div>
+          <div class="slide">
+            <img src="./assets/images/banner4.jpg" alt="Slide 4" />
+          </div>
+          <div class="slide">
+            <img src="./assets/images/banner5.jpg" alt="Slide 5" />
+          </div>
+        </div>
+
+        <div class="navigation">
+          <label for="slide1" class="nav-btn"></label>
+          <label for="slide2" class="nav-btn"></label>
+          <label for="slide3" class="nav-btn"></label>
+          <label for="slide4" class="nav-btn"></label>
+          <label for="slide5" class="nav-btn"></label>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <aside class="list-option">
+        <ul class="option-list">
+          <li class="option-item">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <a href="/search">Search</a>
+          </li>
+          <li class="option-item">
+            <i class="fa-solid fa-house"></i> <a href="/games">Games Home</a>
+          </li>
+          <li class="option-item">
+            <i class="fa-solid fa-business-time"></i>
+            <a href="/timeline">Timeline</a>
+          </li>
+          <li class="option-item active">
+            <i class="fa-solid fa-border-all"></i>
+            <a href="/all-games">All Games</a>
+          </li>
+        </ul>
+      </aside>
+      <div class="content">
+        <h1>HOT GAME</h1>
+        <div class="hot-game">
+          <div class="game-one">
+            <img src="./assets/images/listgame1.png" alt="Mahjong Ways Thumbnail" />
+            <div class="game-play">
+              <img src="./assets/images/logogamelist1.png" alt="Mahjong Ways Logo" />
+              <div class="game-play-content">
+                <div class="game-name">Mahjong Ways</div>
+                <p>
+                  4TECH™ has just launched their very first Mahjong inspired slot machine game...
+                </p>
+              </div>
+              <button class="view-button">View</button>
+            </div>
+          </div>
+          <div class="game-two">
+            <img src="./assets/images/gamelist2.png" alt="Wild Bandito Thumbnail" />
+            <div class="game-play">
+              <img src="./assets/images/logogamelist2.png" alt="Wild Bandito Logo" />
+              <div class="game-play-content">
+                <div class="game-name">Wild Bandito</div>
+                <p>
+                  Águila which means 'The Eagle' is a three-person Mexican bandit team that is...
+                </p>
+              </div>
+              <button class="view-button">View</button>
+            </div>
+          </div>
+        </div>
+
+        <h1>HOT CATEGORY</h1>
+        <div class="hot-category">
+          <div class="category-box">
+            <div class="music">
+              <div class="music-icon"><i class="fa-solid fa-music"></i></div>
+              <br />
+              <div class="category-title">Music</div>
+              <p>Music makes everything better, and these games will grove to it!</p>
+            </div>
+            <img src="./assets/images/game3.png" alt="Music Game 1" class="small" />
+            <img src="./assets/images/game4.png" alt="Music Game 2" class="small" />
+            <img src="./assets/images/game1.png" alt="Music Game 3" class="small" />
+            <img src="./assets/images/game2.png" alt="Music Game 4" class="small" />
+            <img src="./assets/images/game5.png" alt="Music Game 5" class="big" />
+          </div>
+          <div class="category-box">
+            <div class="pocker">
+              <div class="pocker-icon"><i class="fa-solid fa-diamond"></i></div>
+              <br />
+              <div class="category-title">Table Games</div>
+              <p>The classic table games for the gentlemen and ladies.</p>
+            </div>
+            <img src="./assets/images/game3.png" alt="Table Game 1" class="small" />
+            <img src="./assets/images/game4.png" alt="Table Game 2" class="small" />
+            <img src="./assets/images/game1.png" alt="Table Game 3" class="small" />
+            <img src="./assets/images/game2.png" alt="Table Game 4" class="small" />
+            <img src="./assets/images/game6.png" alt="Table Game 5" class="big" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="column-logo">
+        <img src="./assets/images/logo-bottom.jpg" alt="Footer Logo" />
+        <p>Valletta Buildings, South Street, Valletta – VLT 1103 Malta</p>
+        <div class="social-icons">
+          <a href="https://twitter.com" target="_blank" aria-label="Twitter"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a href="https://youtube.com" target="_blank" aria-label="YouTube"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+          <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </div>
+      </div>
+      <div class="column-option">
+        <div class="column">
+          <h3>WEB MAP</h3>
+          <ul>
+            <li><a href="#" class="nav-link" data-page="home">Home</a></li>
+            <li><a href="#" class="nav-link" data-page="games">Games</a></li>
+            <li><a href="#" class="nav-link" data-page="news">News</a></li>
+            <li><a href="#" class="nav-link" data-page="math">Math</a></li>
+            <li><a href="#" class="nav-link" data-page="company">Company</a></li>
+            <li><a href="#" class="nav-link" data-page="events">Events</a></li>
+            <li><a href="#" class="nav-link" data-page="partners">Partners</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <h3>ABOUT US</h3>
+          <ul>
+            <li><a href="/licensing">Licensing</a></li>
+            <li><a href="/certification">Certification</a></li>
+            <li><a href="/responsible-gaming">Responsible Gaming</a></li>
+            <li><a href="/exhibitions">Exhibitions</a></li>
+            <li><a href="/copyright-protection">Copyright Protection</a></li>
+            <li><a href="/privacy-policy">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <h3>EVENTS</h3>
+          <ul>
+            <li><a href="/events/pg-ice-2020">PG ICE 2020</a></li>
+            <li><a href="/events/pg-ice-2018">PG ICE 2018</a></li>
+            <li><a href="/events/pg-ice-2019">PG ICE 2019</a></li>
+            <li><a href="/events/about-ice">About ICE</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <h3>OUR PARTNERS</h3>
+          <ul>
+            <li><a href="/partners/relax-gaming">Relax Gaming</a></li>
+            <li><a href="/partners/leander-games">Leander Games</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">COPYRIGHT © 2015-2024 ALL RIGHTS RESERVED.</div>
+
+    <script>
+      function navigateToPage(page) {
+        const pages = {
+          home: 'Home.html',
+          games: 'UIGame.html',
+          news: 'news.html',
+          math: 'math.html',
+          company: 'company.html',
+          events: 'events.html',
+          partners: 'partners.html',
+        };
+        if (pages[page]) {
+          localStorage.setItem('activePage', page);
+          window.location.href = pages[page];
+        } else {
+          console.error('Page not found:', page);
+        }
+      }
+
+      document.querySelectorAll('.nav-link').forEach((link) => {
+        link.addEventListener('click', (event) => {
+          event.preventDefault();
+          document.querySelectorAll('.nav-link').forEach((item) => {
+            item.classList.remove('active');
+          });
+          link.classList.add('active');
+          const page = link.getAttribute('data-page') || 'game';
+          navigateToPage(page);
+        });
+      });
+
+      window.addEventListener('DOMContentLoaded', () => {
+        // Thiết lập trang active mặc định dựa trên tên file hiện tại
+        let activePage = localStorage.getItem('activePage');
+
+        // Nếu không có trang active nào được lưu trong localStorage,
+        // đặt trang active dựa trên tên file hiện tại
+        if (!activePage) {
+          const currentPath = window.location.pathname;
+          if (currentPath.includes('UIGame.html')) {
+            activePage = 'games';
+          } else if (currentPath.includes('news.html')) {
+            activePage = 'news';
+          } else if (currentPath.includes('math.html')) {
+            activePage = 'math';
+          } else if (currentPath.includes('company.html')) {
+            activePage = 'company';
+          } else if (currentPath.includes('events.html')) {
+            activePage = 'events';
+          } else if (currentPath.includes('partners.html')) {
+            activePage = 'partners';
+          } else {
+            activePage = 'home';
+          }
+          localStorage.setItem('activePage', activePage);
+        }
+
+        // Thiết lập class active cho mục tương ứng
+        document.querySelectorAll('.nav-link').forEach((link) => {
+          const page = link.getAttribute('data-page');
+          if (page === activePage) {
+            link.classList.add('active');
+          }
+        });
+      });
+
+      if (document.querySelector('.slider')) {
+        let currentSlide = 1;
+        const totalSlides = 5;
+
+        function nextSlide() {
+          document.getElementById(`slide${currentSlide}`).checked = false;
+          currentSlide = (currentSlide % totalSlides) + 1;
+          document.getElementById(`slide${currentSlide}`).checked = true;
+        }
+
+        setInterval(nextSlide, 3000);
+      }
+
+      document.querySelectorAll('.view-button').forEach((button) => {
+        button.addEventListener('click', () => {
+          const game = button.closest('.game-one') ? 'mahjong-ways' : 'wild-bandito';
+          window.location.href = `/games/${game}`;
+        });
+      });
+    </script>
+  </body>
+</html>
